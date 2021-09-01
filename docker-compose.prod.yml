@@ -2,7 +2,7 @@ version: "3.4"
 
 services:
   boilerplate:
-    command: yarn prod
+    command: yarn start
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.boilerplate.rule=Host(`www.boilerplate.com`)"
