@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Roboto";
-  src: url("/fonts/roboto-regular.ttf");
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url('/fonts/roboto-regular.ttf');
+	font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("/fonts/roboto-bold.ttf");
-  font-weight: bold;
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url('/fonts/roboto-bold.ttf');
+	font-weight: bold;
+	font-display: swap;
 }
 
 @layer base {
-  html {
-    @apply text-html;
-  }
-  body {
-    @apply text-1.6;
-    @apply text-white;
-    @apply font-roboto;
-    @apply bg-gray;
-  }
+	html {
+		@apply text-html;
+	}
+	body {
+		@apply text-sm;
+		@apply text-white;
+		@apply font-roboto;
+		@apply bg-gray;
+	}
 }
