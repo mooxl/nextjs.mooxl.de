@@ -24,4 +24,8 @@
 		@apply font-roboto;
 		@apply bg-gray;
 	}
+	h1 {
+		@apply text-lg;
+		@apply font-bold;
+	}
 }
