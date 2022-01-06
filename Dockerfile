@@ -1,7 +1,8 @@
-FROM node:current-alpine AS base
+FROM node:16-alpine AS base
 WORKDIR /base
-COPY ./ ./
+COPY ./package.json ./package.json
 RUN yarn install
+COPY . .
 
 FROM base AS build
 ENV NODE_ENV=production
@@ -9,12 +10,11 @@ WORKDIR /build
 COPY --from=base /base ./
 RUN yarn build
 
-FROM node:current-alpine AS prod
+FROM node:16-alpine AS prod
 ENV NODE_ENV=production
 WORKDIR /app
-COPY --from=build /build/package.json ./
+RUN yarn add next
 COPY --from=build /build/.next ./.next
 COPY --from=build /build/public ./public
-RUN yarn add next
 
 EXPOSE 3000
