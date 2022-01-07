@@ -6,7 +6,7 @@ import Projects from '../components/projects';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
 const Index = () => (
-	<div className="max-w-xl my-5 mx-auto grid grid-cols-[min-content_auto] gap-x-5 gap-y-7">
+	<div className="grid grid-cols-[min-content_auto] gap-x-5 gap-y-7">
 		<Me />
 		<Education />
 		<Experience />

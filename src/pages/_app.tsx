@@ -9,7 +9,9 @@ const App = ({ Component, pageProps }) => (
 			<meta charSet="utf-8" />
 			<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 		</Head>
-		<Component {...pageProps} />
+		<div className="max-w-xl my-5 mx-auto">
+			<Component {...pageProps} />
+		</div>
 	</>
 );
 export default App;
