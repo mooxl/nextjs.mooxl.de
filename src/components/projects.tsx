@@ -61,6 +61,13 @@ const Projects = () => (
 				to="#fbe9d7"
 			/>
 			<Project
+				link="https://www.raycast.com/mooxl"
+				domain="Raycast"
+				technologies="React"
+				from="#334d50"
+				to="#b5c6e0"
+			/>
+			<Project
 				link="https://www.genusswerkstatt-rothenbuch.de"
 				domain="genusswerkstatt-rothenbuch.de"
 				technologies="Next.js, Tailwind CSS"
