@@ -1,17 +1,17 @@
 version: '3.4'
 
 services:
-  boilerplate:
-    container_name: boilerplate
+  mooxl:
+    container_name: mooxl
     restart: unless-stopped
     build:
       context: ./
     command: yarn start
     labels:
       - 'traefik.enable=true'
-      - 'traefik.http.routers.boilerplate.rule=Host(`www.boilerplate.com`)'
-      - 'traefik.http.routers.boilerplate.entrypoints=https'
-      - 'traefik.http.routers.boilerplate.tls.certresolver=httpresolver'
+      - 'traefik.http.routers.mooxl.rule=Host(`mooxl.de`)'
+      - 'traefik.http.routers.mooxl.entrypoints=https'
+      - 'traefik.http.routers.mooxl.tls.certresolver=httpresolver'
       - 'traefik.docker.network=traefik_network'
     networks:
       - traefik_network
