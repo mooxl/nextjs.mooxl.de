@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 const Project = ({ link, domain, technologies, from, to }) => (
 	<a href={link} target="_blank">
 		<motion.div
-			whileHover={{ scale: 1.03 }}
+			whileHover={{ scale: 1.02 }}
+			whileTap={{ scale: 0.98 }}
 			className={`rounded-xl p-0.3 h-full bg-gradient-to-r from-[${from}] to-[${to}] cursor-pointer`}>
 			<div className="bg-gray rounded-lg p-2 text-center h-full">
 				<h4>{domain}</h4>

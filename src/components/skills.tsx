@@ -4,17 +4,17 @@ const Skills = () => (
 		<div className="space-y-3">
 			<div>
 				<h4>Programmiersprachen</h4>
-				<p className="grid grid-cols-5 gap-y-1 ">
+				<div className="grid grid-cols-5 gap-y-1 ">
 					<p>JavaScript</p>
 					<p>TypeScript</p>
 					<p>Golang</p>
 					<p>C++</p>
 					<p>Python</p>
-				</p>
+				</div>
 			</div>
 			<div>
 				<h4>Bibliotheken & Frameworks</h4>
-				<p className="grid grid-cols-5 gap-y-1 ">
+				<div className="grid grid-cols-5 gap-y-1 ">
 					<p>React</p>
 					<p>Next.js</p>
 					<p>Vue</p>
@@ -25,11 +25,11 @@ const Skills = () => (
 					<p>Deno</p>
 					<p>Oak</p>
 					<p>Tailwind CSS</p>
-				</p>
+				</div>
 			</div>
 			<div>
 				<h4>Andere</h4>
-				<p className="grid grid-cols-5 gap-y-1 ">
+				<div className="grid grid-cols-5 gap-y-1 ">
 					<p>Linux</p>
 					<p>Docker</p>
 					<p>Directus</p>
@@ -37,7 +37,7 @@ const Skills = () => (
 					<p>Git</p>
 					<p>Deutsch</p>
 					<p>Englisch (fließend)</p>
-				</p>
+				</div>
 			</div>
 		</div>
 	</>
