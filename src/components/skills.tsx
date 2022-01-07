@@ -3,7 +3,7 @@ const Section = (props: { title: string; skills: string[] }) => (
 		<h4>{props.title}</h4>
 		<div className="grid grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-y-1 ">
 			{props.skills.map((skill) => (
-				<p>{skill}</p>
+				<p key={skill}>{skill}</p>
 			))}
 		</div>
 	</>
@@ -34,10 +34,10 @@ const Skills = () => (
 			<Section
 				title="Programmiersprachen"
 				skills={[
-					'Linux',
+					'Linux Server',
 					'Docker',
 					'Directus',
-					'Figma',
+					'Traefik',
 					'Git',
 					'Deutsch',
 					'Englisch (fließend)',

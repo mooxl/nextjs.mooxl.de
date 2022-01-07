@@ -11,7 +11,7 @@ const Milestone = (props: {
 				<h5>{props.role}</h5>
 				<ul>
 					{props.list.map((item: string) => (
-						<li>{item}</li>
+						<li key={item}>{item}</li>
 					))}
 				</ul>
 			</div>
