@@ -14,6 +14,7 @@ FROM node:16-alpine AS prod
 ENV NODE_ENV=production
 WORKDIR /app
 RUN yarn add next
+COPY --from=build /build/package.json ./package.json
 COPY --from=build /build/.next ./.next
 COPY --from=build /build/public ./public
 
