@@ -1,6 +1,6 @@
 const Education = () => (
 	<>
-		<h3>Ausbildungen</h3>
+		<h3>Ausbildung</h3>
 		<div className="space-y-3">
 			<div>
 				<div className="flex justify-between">

@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
+
 const Project = ({ link, domain, technologies, from, to }) => (
 	<a href={link} target="_blank">
 		<motion.div
 			whileHover={{ scale: 1.03 }}
-			className={`rounded-xl p-0.3 h-full bg-gradient-to-r from-${from} to-${to} cursor-pointer`}>
+			className={`rounded-xl p-0.3 h-full bg-gradient-to-r from-[${from}] to-[${to}] cursor-pointer`}>
 			<div className="bg-gray rounded-lg p-2 text-center h-full">
 				<h4>{domain}</h4>
 				<p>{technologies}</p>
@@ -11,6 +12,7 @@ const Project = ({ link, domain, technologies, from, to }) => (
 		</motion.div>
 	</a>
 );
+
 const Projects = () => (
 	<>
 		<h3>Projekte</h3>
@@ -19,85 +21,95 @@ const Projects = () => (
 				link="https://beta.mediaatrium.de"
 				domain="laufach.de (beta)"
 				technologies="Next.js, Tailwind CSS, Directus, MeiliSearch"
-				from="violet-600"
-				to="blue-900"
+				from="#1dbde6"
+				to="#f1515e"
 			/>
 			<Project
 				link="https://www.ansmann.tech"
 				domain="ansmann.tech"
-				technologies="Next.js, Tailwind CSS"
-				from="#b2ef91"
-				to="#fa9372"
+				technologies="Next.js, Tailwind CSS, AWS SES"
+				from="#00ff87"
+				to="#60efff"
 			/>
 			<Project
 				link="https://www.zimmerfrei-bonn.de"
 				domain="zimmerfrei-bonn.de"
 				technologies="Next.js, Tailwind CSS, Node.js, Fastify, Knex, PostgreSQL"
-				from="#b2ef91"
-				to="#fa9372"
+				from="#bf0fff"
+				to="#cbff49"
 			/>
 			<Project
 				link="https://www.mediaatrium.de"
 				domain="mediaatrium.de"
 				technologies="Next.js"
-				from="#b2ef91"
+				from="#696eff"
+				to="#f8acff"
+			/>
+			<Project
+				link="https://www.zahnarzt-herti.ch"
+				domain="zahnarzt-herti.ch"
+				technologies="Next.js, Tailwind CSS, Localization, AWS SES"
+				from="#a9ff68"
+				to="#ff8989"
+			/>
+			<Project
+				link="https://www.breemo.de"
+				domain="breemo.de"
+				technologies="Nuxt.js, Strapi, Snipcart"
+				from="#f6d5f7"
+				to="#fbe9d7"
+			/>
+			<Project
+				link="https://www.genusswerkstatt-rothenbuch.de"
+				domain="genusswerkstatt-rothenbuch.de"
+				technologies="Next.js, Tailwind CSS"
+				from="#84ffc9"
+				to="#eca0ff"
+			/>
+			<Project
+				link="https://www.silas-schmitt.de"
+				domain="silas-schmitt.de"
+				technologies="Next.js, Tailwind CSS, AWS SES"
+				from="#84ffc9"
+				to="#eca0ff"
+			/>
+			<Project
+				link="https://www.sfn-neumann.de"
+				domain="sfn-neumann.de"
+				technologies="Next.js, SCSS, Framer Motion"
+				from="#ef709b"
 				to="#fa9372"
 			/>
-			<div className="rounded-xl bg-gradient-to-r p-0.3 from-violet-600 to-[#f8acff]">
-				<div className="bg-gray rounded-lg p-2 text-center h-full">
-					<h4>zahnarzt-herti.ch</h4>
-					<p>Next.js, Tailwind CSS, Localization</p>
-				</div>
-			</div>
-			<div className="rounded-xl bg-gradient-to-r p-0.3 from-[#f13c77] to-[#f5e6ad]">
-				<div className="bg-gray rounded-lg p-2 text-center h-full">
-					<h4>genusswerkstatt-rothenbuch.de</h4>
-					<p>Next.js, Tailwind CSS</p>
-				</div>
-			</div>
-			<div className="rounded-xl bg-gradient-to-r p-0.3 from-[#1dbde6] to-[#f1515e]">
-				<div className="bg-gray rounded-lg p-2 text-center h-full">
-					<h4>silas-schmitt.de</h4>
-					<p>Next.js, Tailwind CSS, AWS SES</p>
-				</div>
-			</div>
-			<div className="rounded-xl bg-gradient-to-r p-0.3 from-[#fffbaf] to-[#ab2aed]">
-				<div className="bg-gray rounded-lg p-2 text-center h-full">
-					<h4>www.sfn-neumann.de</h4>
-					<p>Next.js, SCSS, Framer Motion</p>
-				</div>
-			</div>
-			<div className="rounded-xl bg-gradient-to-r p-0.3 from-[#b6f3c9] to-[#4766f4]">
-				<div className="bg-gray rounded-lg p-2 text-center h-full">
-					<h4>www.cube-manufacture.de</h4>
-					<p>Nuxt.js, SCSS</p>
-				</div>
-			</div>
-			<div className="rounded-xl bg-gradient-to-r p-0.3 from-[#83f5e5] to-[#e761bd]">
-				<div className="bg-gray rounded-lg p-2 text-center h-full">
-					<h4>www.breemo.de</h4>
-					<p>Nuxt.js, Strapi, Snipcart</p>
-				</div>
-			</div>
-			<div className="rounded-xl bg-gradient-to-r p-0.3 from-[#f9cdc3] to-[#facefb]">
-				<div className="bg-gray rounded-lg p-2 text-center h-full">
-					<h4>www.freakademy.net</h4>
-					<p>Next.js, Framer Motion</p>
-				</div>
-			</div>
-			<div className="rounded-xl bg-gradient-to-r p-0.3 from-[#f292ed] to-[#f36364]">
-				<div className="bg-gray rounded-lg p-2 text-center h-full">
-					<h4>www.mr-werk-iserlohn.de</h4>
-					<p>Nuxt.js</p>
-				</div>
-			</div>
-			<div className="rounded-xl bg-gradient-to-r p-0.3 from-[#9491e2] to-[#aff2d8]">
-				<div className="bg-gray rounded-lg p-2 text-center h-full">
-					<h4>www.sixthreeway.de</h4>
-					<p>Next.js, Strapi</p>
-				</div>
-			</div>
+			<Project
+				link="https://www.cube-manufacture.de"
+				domain="cube-manufacture.de"
+				technologies="Nuxt.js, SCSS"
+				from="#9bafd9"
+				to="#103783"
+			/>
+			<Project
+				link="https://www.freakademy.net"
+				domain="freakademy.net"
+				technologies="Next.js, Framer Motion"
+				from="#e9b7ce"
+				to="#d3f3f1"
+			/>
+			<Project
+				link="https://www.mr-werk-iserlohn.de"
+				domain="mr-werk-iserlohn.de"
+				technologies="Nuxt.js, SCSS"
+				from="#42047e"
+				to="#07f49e"
+			/>
+			<Project
+				link="https://www.sixthreeway.de"
+				domain="sixthreeway.de"
+				technologies="Next.js, Strapi"
+				from="#f5e6ad"
+				to="#f13c77"
+			/>
 		</div>
 	</>
 );
+
 export default Projects;

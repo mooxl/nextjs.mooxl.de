@@ -3,6 +3,7 @@ module.exports = {
 	content: [
 		'./src/pages/**/*.{js,ts,jsx,tsx}',
 		'./src/components/**/*.{js,ts,jsx,tsx}',
+		'./src/utils/safelist.txt',
 	],
 	theme: {
 		fontSize: {
@@ -25,6 +26,7 @@ module.exports = {
 		},
 		maxWidth: {
 			xl: '1000px',
+			experience: '550px',
 		},
 		extend: {
 			colors: {
