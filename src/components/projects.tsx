@@ -17,7 +17,7 @@ const Project = ({ link, domain, technologies, from, to }) => (
 const Projects = () => (
 	<>
 		<h3>Projekte</h3>
-		<div className="grid grid-cols-2 gap-3">
+		<div className="grid grid-cols-2 sm:grid-cols-1 gap-3">
 			<Project
 				link="https://beta.mediaatrium.de"
 				domain="laufach.de (beta)"
