@@ -10,8 +10,8 @@ const Me = () => (
 				<h2 className="my-1">Full Stack Web Developer</h2>
 				<p>
 					Gude! Ich bin am 29.01.1996 in Aschaffenburg geboren und versuche
-					seitdem, das Internet schöner und schneller zu machen. <br /> Lebe in
-					Köln und studiere bald in Aachen.
+					seitdem, das Internet schöner und schneller zu machen. <br /> Lebe
+					demnächst in Köln-Ehrenfeld und studiere bald wieder in Aachen.
 				</p>
 			</div>
 			<div className="rounded-full overflow-hidden w-15 flex-shrink-0 md:order-1">

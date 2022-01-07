@@ -10,6 +10,7 @@ const Contact = () => {
 		formState: { errors },
 	} = useForm();
 	const onSubmit = async (data: { mail: string; message: string }) => {
+		console.log(process.env.NEXT_PUBLIC_USERNAME);
 		const response = await fetch('https://awsmailer.mediaatrium.de/send', {
 			method: 'POST',
 			mode: 'cors',

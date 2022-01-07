@@ -26,19 +26,20 @@ const Experience = () => (
 			<Milestone
 				title="Mediaatrium GmbH"
 				role="Full Stack Developer"
-				date="Februar 2021 - Jetzt, Laufach"
+				date="seit Februar 2021, Laufach"
 				list={[
-					'Front- und Backendentwicklung mittels JavaScript & TypeScript anverschiedenen Projekte',
+					'Front- und Backend-Entwicklung mittels TypeScript im Rahmen verschiedener Projekte',
 					'Überarbeitung der kompletten serverseitigen Infrastruktur via Docker',
+					'Optimierung interner technischer Prozesse',
 				]}
 			/>
 			<Milestone
 				title="ASTA FH Aachen"
-				role="Front- & Backend Web Developer"
-				date="November 2018 - Jetzt, Aachen"
+				role="Front- und Backend Web Developer"
+				date="seit November 2018, Aachen"
 				list={[
 					'Entwicklung und Instandhaltung verschiedener Systeme in Node.js, Deno, Golang und Python',
-					'Wohnbörse der Uni Bonn',
+					'Konzeption und Umsetzung der Wohnbörse "Zimmerfrei" der Uni Bonn',
 					'Erweiterung der elektronischen Semesterticketrückerstattung',
 				]}
 			/>

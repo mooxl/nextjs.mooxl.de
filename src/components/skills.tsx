@@ -17,7 +17,7 @@ const Skills = () => (
 				skills={['JavaScript', 'TypeScript', 'Golang', 'C++', 'Python']}
 			/>
 			<Section
-				title="Bibliotheken & Frameworks"
+				title="Bibliotheken und Frameworks"
 				skills={[
 					'React',
 					'Next.js',
@@ -32,13 +32,15 @@ const Skills = () => (
 				]}
 			/>
 			<Section
-				title="Programmiersprachen"
+				title="Weitere Kenntnisse"
 				skills={[
 					'Linux Server',
 					'Docker',
 					'Directus',
 					'Traefik',
 					'Git',
+					'HTML',
+					'SCSS',
 					'Deutsch',
 					'Englisch (fließend)',
 				]}

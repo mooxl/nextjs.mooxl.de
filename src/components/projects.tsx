@@ -71,8 +71,8 @@ const Projects = () => (
 				link="https://www.silas-schmitt.de"
 				domain="silas-schmitt.de"
 				technologies="Next.js, Tailwind CSS, AWS SES"
-				from="#84ffc9"
-				to="#eca0ff"
+				from="#fbd07c"
+				to="#b5c6e0"
 			/>
 			<Project
 				link="https://www.sfn-neumann.de"
