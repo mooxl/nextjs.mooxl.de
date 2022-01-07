@@ -5,11 +5,11 @@ const App = ({ Component, pageProps }) => (
 	<>
 		<Head>
 			<title>Max Schmidt - Full Stack Web Developer</title>
-			<meta name="description" content="boilerplate" />
+			<meta name="description" content="" />
 			<meta charSet="utf-8" />
 			<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 		</Head>
-		<div className="max-w-xl my-5 mx-auto">
+		<div className="max-w-xl my-5 mx-auto lg:mx-2">
 			<Component {...pageProps} />
 		</div>
 	</>

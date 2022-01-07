@@ -14,12 +14,9 @@ module.exports = {
 			xl: '5rem',
 		},
 		screens: {
-			'2xl': { max: '1536px' },
-			xl: { max: '1280px' },
-			lg: { max: '1024px' },
+			lg: { max: '1040px' },
 			md: { max: '768px' },
 			sm: { max: '640px' },
-			xs: { max: '500px' },
 		},
 		fontFamily: {
 			plex: ['Plex', 'sans-serif'],
@@ -35,6 +32,9 @@ module.exports = {
 					light: '#888888',
 					dark: '#222222',
 				},
+			},
+			gridTemplateColumns: {
+				desktop: 'min-content auto',
 			},
 			spacing: {
 				0: '0',

@@ -1,40 +1,47 @@
+const Milestone = (props: {
+	title: string;
+	role: string;
+	date: string;
+	list: string[];
+}) => (
+	<div>
+		<div className="flex justify-between md:flex-col">
+			<div className="md:order-2">
+				<h4>{props.title}</h4>
+				<h5>{props.role}</h5>
+				<ul>
+					{props.list.map((item: string) => (
+						<li>{item}</li>
+					))}
+				</ul>
+			</div>
+			<p className="flex-shrink-0 md:order-1">{props.date}</p>
+		</div>
+	</div>
+);
 const Experience = () => (
 	<>
 		<h3>Erfahrung</h3>
-		<div className="space-y-3">
-			<div className="flex justify-between">
-				<div>
-					<h4>Mediaatrium GmbH</h4>
-					<h5>Full Stack Developer</h5>
-					<ul>
-						<li>
-							Front- und Backendentwicklung mittels JavaScript & TypeScript an
-							verschiedenen Projekten
-						</li>
-						<li>Einführung von Continuos Delivery und Integration (DevOps)</li>
-						<li>
-							Überarbeitung der kompletten serverseitigen Infrastruktur via
-							Docker
-						</li>
-					</ul>
-				</div>
-				<p className="flex-shrink-0">Februar 2021 - Jetzt, Laufach</p>
-			</div>
-			<div className="flex justify-between">
-				<div>
-					<h4>ASTA FH Aachen</h4>
-					<h5>Front- & Backend Web Developer</h5>
-					<ul>
-						<li>
-							Entwicklung und Instandhaltung verschiedener Systeme in Node.js,
-							Deno, Golang und Python
-						</li>
-						<li>Komplette Überarbeitung der Wohnbörse der Uni Bonn</li>
-						<li>Erweiterung der elektronischen Semesterticketrückerstattung</li>
-					</ul>
-				</div>
-				<p className="flex-shrink-0">November 2018 - Jetzt, Aachen</p>
-			</div>
+		<div className="space-y-3 lg:space-y-2">
+			<Milestone
+				title="Mediaatrium GmbH"
+				role="Full Stack Developer"
+				date="Februar 2021 - Jetzt, Laufach"
+				list={[
+					'Front- und Backendentwicklung mittels JavaScript & TypeScript anverschiedenen Projekte',
+					'Überarbeitung der kompletten serverseitigen Infrastruktur via Docker',
+				]}
+			/>
+			<Milestone
+				title="ASTA FH Aachen"
+				role="Front- & Backend Web Developer"
+				date="November 2018 - Jetzt, Aachen"
+				list={[
+					'Entwicklung und Instandhaltung verschiedener Systeme in Node.js, Deno, Golang und Python',
+					'Wohnbörse der Uni Bonn',
+					'Erweiterung der elektronischen Semesterticketrückerstattung',
+				]}
+			/>
 		</div>
 	</>
 );

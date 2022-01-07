@@ -4,8 +4,8 @@ import me from '../../public/pixels/me.jpg';
 const Me = () => (
 	<>
 		<div></div>
-		<div className="flex justify-between gap-10 items-center">
-			<div>
+		<div className="flex md:flex-col justify-between gap-10 md:gap-y-3 items-center md:items-start">
+			<div className="md:order-2">
 				<h1>Max Schmidt</h1>
 				<h2 className="my-1">Full Stack Web Developer</h2>
 				<p>
@@ -14,7 +14,7 @@ const Me = () => (
 					Köln und studiere bald in Aachen.
 				</p>
 			</div>
-			<div className="rounded-full overflow-hidden w-15 flex-shrink-0">
+			<div className="rounded-full overflow-hidden w-15 flex-shrink-0 md:order-1">
 				<Image src={me} placeholder="blur" />
 			</div>
 			<div className="hidden">

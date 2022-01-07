@@ -17,12 +17,12 @@
 @layer base {
 	html {
 		@apply text-html;
+		@apply bg-gray;
 	}
 	body {
 		@apply text-sm;
 		@apply text-white;
 		@apply font-plex;
-		@apply bg-gray;
 		@apply leading-none;
 		@apply tracking-wide;
 	}
@@ -37,16 +37,21 @@
 	}
 	h3 {
 		@apply text-right;
+		@apply lg:text-left;
 		@apply font-bold;
 		@apply uppercase;
 		@apply text-md;
 		@apply text-gray-light;
+		@apply lg:mt-6;
+		@apply lg:mb-2;
 	}
 	h4 {
 		@apply text-white;
 		@apply font-bold;
 		@apply text-md;
 		@apply mb-1.5;
+		@apply lg:mb-1;
+		@apply md:mb-0.5;
 	}
 	a {
 		@apply leading-normal;
@@ -54,7 +59,7 @@
 	}
 	h5 {
 		@apply text-gray-light;
-		@apply mb-0.5;
+		@apply leading-snug;
 	}
 	ul {
 		@apply list-disc;
