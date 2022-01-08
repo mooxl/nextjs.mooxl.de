@@ -34,7 +34,7 @@ const Experience = () => (
 				]}
 			/>
 			<Milestone
-				title="ASTA FH Aachen"
+				title="AStA FH Aachen"
 				role="Front- und Backend Web Developer"
 				date="seit November 2018, Aachen"
 				list={[
