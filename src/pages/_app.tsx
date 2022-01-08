@@ -16,6 +16,12 @@ const App = ({ Component, pageProps }) => (
 		<div className="max-w-xl my-5 mx-auto lg:mx-2">
 			<Component {...pageProps} />
 		</div>
+		<Script
+			async
+			defer
+			data-website-id="b0640587-09bf-4f40-8988-28afb264121c"
+			src="https://umami.mediaatrium.de/umami.js"
+		/>
 	</>
 );
 export default App;
