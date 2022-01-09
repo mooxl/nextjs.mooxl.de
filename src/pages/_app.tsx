@@ -6,6 +6,7 @@ const App = ({ Component, pageProps }) => (
 	<>
 		<Head>
 			<title>Max Schmidt - Full Stack Web Developer</title>
+			<html lang="de" />
 			<meta
 				name="description"
 				content="Full Stack Web Developer and TypeScript enthusiast"
@@ -19,7 +20,7 @@ const App = ({ Component, pageProps }) => (
 		<Script
 			async
 			defer
-			data-website-id="b0640587-09bf-4f40-8988-28afb264121c"
+			data-website-id="e28ae2bb-7b8b-46df-8c5c-7a2a2fbfe562"
 			src="https://umami.mediaatrium.de/umami.js"
 		/>
 	</>

@@ -15,18 +15,21 @@ const Me = () => (
 				</p>
 			</div>
 			<div className="rounded-full overflow-hidden w-15 flex-shrink-0 md:order-1">
-				<Image src={me} placeholder="blur" />
+				<Image src={me} placeholder="blur" alt="Bild von Max Schmidt" />
 			</div>
 			<div className="hidden">
-				<a href="mailto:me@maxschmidt.dev" target="_blank">
+				<a href="mailto:me@maxschmidt.dev" rel="noopener" target="_blank">
 					me@maxschmidt.dev
 				</a>
 				<br />
-				<a href="tel:+4915901766787" target="_blank">
+				<a href="tel:+4915901766787" rel="noopener" target="_blank">
 					+49 159 0176 6787
 				</a>
 				<br />
-				<a href="https://goo.gl/maps/PPPwLmj81DWFhnsL8" target="_blank">
+				<a
+					href="https://goo.gl/maps/PPPwLmj81DWFhnsL8"
+					rel="noopener"
+					target="_blank">
 					52064 Aachen
 				</a>
 			</div>

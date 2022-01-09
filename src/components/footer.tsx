@@ -7,8 +7,12 @@ const Footer = () => (
 		<Link href="/impressum">
 			<a>Impressum</a>
 		</Link>
-		<a className="relative w-3" href="https://github.com/mooxl" target="_blank">
-			<Image src={github} />
+		<a
+			className="relative w-3"
+			href="https://github.com/mooxl"
+			rel="noopener"
+			target="_blank">
+			<Image src={github} alt="Logo von GitHub" />
 		</a>
 		<Link href="/datenschutz">
 			<a>Datenschutz</a>

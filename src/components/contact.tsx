@@ -40,7 +40,7 @@ const Contact = () => {
 				<form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
 					{error && <h3>{error}</h3>}
 					<div className="space-y-1">
-						<label>
+						<label htmlFor="mail">
 							E-Mail{' '}
 							{errors.mail && (
 								<>
@@ -50,6 +50,7 @@ const Contact = () => {
 						</label>
 						<input
 							type="text"
+							id="mail"
 							className="w-full rounded-xl  p-1 bg-gray-dark text-gray-light outline-none"
 							{...register('mail', {
 								required: true,
@@ -59,7 +60,7 @@ const Contact = () => {
 						/>
 					</div>
 					<div className="space-y-1">
-						<label>
+						<label htmlFor="message">
 							Nachricht{' '}
 							{errors.message && (
 								<>
@@ -68,6 +69,7 @@ const Contact = () => {
 							)}
 						</label>
 						<textarea
+							id="message"
 							className="w-full resize-none rounded-xl h-15  p-1 bg-gray-dark text-gray-light outline-none"
 							{...register('message', { required: true })}></textarea>
 					</div>

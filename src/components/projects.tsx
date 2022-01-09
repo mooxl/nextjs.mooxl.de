@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const Project = ({ link, domain, technologies, from, to }) => (
-	<a href={link} target="_blank">
+	<a href={link} rel="noopener" target="_blank">
 		<motion.div
 			whileHover={{ scale: 1.02 }}
 			whileTap={{ scale: 0.98 }}
