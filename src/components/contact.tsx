@@ -4,27 +4,32 @@ import { useState } from 'react';
 
 const Contact = () => {
 	const [sent, setSent] = useState(false);
+	const [error, setError] = useState(null);
 	const {
 		register,
 		handleSubmit,
 		formState: { errors },
 	} = useForm();
 	const onSubmit = async (data: { mail: string; message: string }) => {
-		console.log(process.env.NEXT_PUBLIC_USERNAME);
-		const response = await fetch('https://awsmailer.mediaatrium.de/send', {
-			method: 'POST',
-			mode: 'cors',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify({
-				username: process.env.NEXT_PUBLIC_USERNAME,
-				key: process.env.NEXT_PUBLIC_KEY,
-				from: process.env.NEXT_PUBLIC_FROM,
-				to: process.env.NEXT_PUBLIC_TO,
-				subject: `Neue Nachricht von ${data.mail}`,
-				content: data.message,
-			}),
-		});
-		response.statusText === 'OK' && setSent(true);
+		try {
+			await fetch('https://awsmailer.mediaatrium.de/send', {
+				method: 'POST',
+				mode: 'cors',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({
+					username: process.env.NEXT_PUBLIC_USERNAME,
+					key: process.env.NEXT_PUBLIC_KEY,
+					from: process.env.NEXT_PUBLIC_FROM,
+					to: process.env.NEXT_PUBLIC_TO,
+					subject: `Neue Nachricht von ${data.mail}`,
+					content: data.message,
+				}),
+			});
+			setSent(true);
+		} catch (error) {
+			console.log(error);
+			setError('Etwas ist schief gelaufen.');
+		}
 	};
 	return (
 		<>
@@ -33,6 +38,7 @@ const Contact = () => {
 				<h3>Vielen Dank für die Nachricht</h3>
 			) : (
 				<form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
+					{error && <h3>{error}</h3>}
 					<div className="space-y-1">
 						<label>
 							E-Mail{' '}
