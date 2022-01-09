@@ -6,7 +6,6 @@ const App = ({ Component, pageProps }) => (
 	<>
 		<Head>
 			<title>Max Schmidt - Full Stack Web Developer</title>
-			<html lang="de" />
 			<meta
 				name="description"
 				content="Full Stack Web Developer and TypeScript enthusiast"
