@@ -27,7 +27,7 @@ const Education = () => (
 			/>
 			<Milestone
 				title="Realschule Bessenbach"
-				date="2008-2021, Bessenbach"
+				date="2008-2012, Bessenbach"
 				text={`Mittlere Reife\nSchwerpunkte: Mathematik und Naturwissenschaft`}
 			/>
 		</div>

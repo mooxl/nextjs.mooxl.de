@@ -1,14 +1,30 @@
 import { motion } from 'framer-motion';
 
-const Project = ({ link, domain, technologies, from, to }) => (
-	<a href={link} rel="noopener" target="_blank">
+const Project = (props: {
+	link: string;
+	domain: string;
+	technologies: string;
+	from: string;
+	to: string;
+	matteo?: boolean;
+}) => (
+	<a href={props.link} rel="noopener" target="_blank">
 		<motion.div
 			whileHover={{ scale: 1.02 }}
 			whileTap={{ scale: 0.98 }}
-			className={`rounded-xl p-0.3 h-full bg-gradient-to-r from-[${from}] to-[${to}] cursor-pointer`}>
+			className={`rounded-xl p-0.3 h-full bg-gradient-to-r from-[${props.from}] to-[${props.to}] cursor-pointer`}>
 			<div className="bg-gray rounded-lg p-2 text-center h-full">
-				<h4>{domain}</h4>
-				<p>{technologies}</p>
+				<h4>{props.domain}</h4>
+				<p>{props.technologies}</p>
+				{props.matteo && (
+					<a
+						className="hover:text-white"
+						href="https://github.com/matteohoeren"
+						target="_blank"
+						rel="noopener">
+						gemacht mit Matteo
+					</a>
+				)}
 			</div>
 		</motion.div>
 	</a>
@@ -24,6 +40,7 @@ const Projects = () => (
 				technologies="Next.js, Tailwind CSS, Directus, MeiliSearch"
 				from="#1dbde6"
 				to="#f1515e"
+				matteo={true}
 			/>
 			<Project
 				link="https://www.ansmann.tech"
@@ -73,6 +90,7 @@ const Projects = () => (
 				technologies="Next.js, Tailwind CSS"
 				from="#84ffc9"
 				to="#eca0ff"
+				matteo={true}
 			/>
 			<Project
 				link="https://www.silas-schmitt.de"
@@ -80,6 +98,7 @@ const Projects = () => (
 				technologies="Next.js, Tailwind CSS, AWS SES"
 				from="#fbd07c"
 				to="#b5c6e0"
+				matteo={true}
 			/>
 			<Project
 				link="https://www.sfn-neumann.de"
