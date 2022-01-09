@@ -15,7 +15,7 @@ const Milestone = (props: {
 					))}
 				</ul>
 			</div>
-			<p className="flex-shrink-0 md:order-1">{props.date}</p>
+			<p className="flex-shrink-0 md:order-1 md:mb-0.2">{props.date}</p>
 		</div>
 	</div>
 );
