@@ -9,29 +9,13 @@ const Me = () => (
 				<h1>Max Schmidt</h1>
 				<h2 className="my-1">Full Stack Web Developer</h2>
 				<p>
-					Gude! Ich bin am 29.01.1996 in Aschaffenburg geboren und versuche
-					seitdem, das Internet schöner und schneller zu machen. <br /> Lebe
-					demnächst in Köln-Ehrenfeld und studiere bald wieder in Aachen.
+					Gude! Ich bin am 29.01.1996 in Aschaffenburg geboren und bin dabei,
+					das Internet schöner und schneller zu machen. <br /> Lebe demnächst in
+					Köln-Ehrenfeld und studiere bald wieder in Aachen.
 				</p>
 			</div>
 			<div className="rounded-full overflow-hidden w-15 flex-shrink-0 md:order-1">
 				<Image src={me} placeholder="blur" alt="Bild von Max Schmidt" />
-			</div>
-			<div className="hidden">
-				<a href="mailto:me@maxschmidt.dev" rel="noopener" target="_blank">
-					me@maxschmidt.dev
-				</a>
-				<br />
-				<a href="tel:+4915901766787" rel="noopener" target="_blank">
-					+49 159 0176 6787
-				</a>
-				<br />
-				<a
-					href="https://goo.gl/maps/PPPwLmj81DWFhnsL8"
-					rel="noopener"
-					target="_blank">
-					52064 Aachen
-				</a>
 			</div>
 		</div>
 	</>
