@@ -5,8 +5,10 @@ import Skills from '../components/skills';
 import Projects from '../components/projects';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
+import Menu from '../components/menu';
 const Index = () => (
 	<div className="grid grid-cols-[min-content_auto] lg:grid-cols-1 gap-x-5 gap-y-10 lg:gap-y-0">
+		<Menu />
 		<Me />
 		<Education />
 		<Experience />

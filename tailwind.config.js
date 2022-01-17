@@ -5,6 +5,7 @@ module.exports = {
 		'./src/components/**/*.{js,ts,jsx,tsx}',
 		'./src/utils/safelist.txt',
 	],
+	darkMode: 'class',
 	theme: {
 		fontSize: {
 			html: '62.5%',
