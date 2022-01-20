@@ -29,6 +29,7 @@
 	h1 {
 		@apply text-xl;
 		@apply font-bold;
+		@apply leading-none;
 	}
 	h2 {
 		@apply text-lg;

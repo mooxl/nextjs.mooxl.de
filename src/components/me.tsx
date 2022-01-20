@@ -3,7 +3,6 @@ import me from '../../public/pixels/me.jpg';
 
 const Me = () => (
 	<>
-		<div></div>
 		<div className="flex md:flex-col justify-between gap-10 md:gap-y-3 items-center md:items-start">
 			<div className="md:order-2">
 				<h1>Max Schmidt</h1>

@@ -11,8 +11,7 @@ const Menu = () => {
 	}, [dark]);
 	return (
 		<>
-			<div></div>
-			<div className="flex justify-end gap-x-5 -mb-5 lg:mb-5 md:-mb-5">
+			<div className="flex justify-end mt-0.8 lg:justify-start lg:mt-0 lg:mb-2 md:justify-end md:-mb-4">
 				<Link href="/Lebenslauf.pdf">
 					<motion.a
 						whileHover={{ scale: 1.02 }}
