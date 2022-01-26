@@ -34,6 +34,15 @@ const Experience = () => (
 				]}
 			/>
 			<Milestone
+				title="Curly UG"
+				role="Mitgründer"
+				date="Dezember 2019 - Februar 2021, Aachen"
+				list={[
+					'Konzeption und teilweise Umsetzung einer sozialen Foodsharing-Plattform mit Golang und Flutter',
+					'Webentwicklung für eigene Website und verschiedene Kunden unter Becurly',
+				]}
+			/>
+			<Milestone
 				title="AStA FH Aachen"
 				role="Front- und Backend Web Developer"
 				date="seit November 2018, Aachen"
