@@ -13,7 +13,7 @@ RUN yarn build
 FROM node:16-alpine AS prod
 ENV NODE_ENV=production
 WORKDIR /app
-RUN yarn add next
+RUN yarn add next@12.0.10
 COPY --from=build /build .
 
 EXPOSE 3000
