@@ -15,5 +15,6 @@ module.exports = {
 				'react-dom': 'preact/compat',
 			});
 		}
+		return config;
 	},
 };
