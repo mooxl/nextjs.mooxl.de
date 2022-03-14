@@ -13,7 +13,7 @@ const Education = () => (
 		<div className="space-y-3 lg:space-y-2">
 			<Milestone
 				title="FH Aachen | M. Eng. Information Systems Engineering"
-				date="ab März 2022, Aachen"
+				date="seit März 2022, Aachen"
 			/>
 			<Milestone
 				title="FH Aachen | B. Sc. Informatik"
