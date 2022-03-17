@@ -4,8 +4,8 @@ const Impressum = () => (
 		<h2>Angaben gemäß § 5 TMG:</h2>
 		<p>
 			Max Schmidt <br />
-			Hubertusstraße 41 <br />
-			52064 Aachen <br /> <br />
+			Gutenbergstraße 38 <br />
+			50823 Köln <br /> <br />
 			E-Mail: contact@mooxl.de
 		</p>
 		<h2>Umsatzsteuer:</h2>
