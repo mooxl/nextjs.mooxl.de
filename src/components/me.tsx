@@ -11,7 +11,7 @@ const Me = () => (
 					Gude! Ich bin am 29.01.1996 in Aschaffenburg geboren und bin dabei,
 					das Internet schöner und schneller zu machen. <br /> Lebe in
 					Köln-Ehrenfeld, studiere wieder in Aachen und arbeite momentan bei
-					Mediaatrium.
+					Ambient.
 				</p>
 			</div>
 			<div className="rounded-full overflow-hidden w-15 flex-shrink-0 md:order-1">

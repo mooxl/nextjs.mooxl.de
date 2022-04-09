@@ -24,9 +24,18 @@ const Experience = () => (
 		<h3>Erfahrung</h3>
 		<div className="space-y-3 lg:space-y-2">
 			<Milestone
+				title="Ambient"
+				role="Frontend Developer "
+				date="seit April 2022, Köln"
+				list={[
+					'Implementierung diverser Features in unterschiedlichen Codebasen',
+					'Beheben von Bugs an abwechslungsreiche Dienste',
+				]}
+			/>
+			<Milestone
 				title="Mediaatrium GmbH"
 				role="Full Stack Developer"
-				date="seit Februar 2021, Laufach"
+				date="Februar 2021 - März 2022, Laufach"
 				list={[
 					'Front- und Backend-Entwicklung mittels TypeScript im Rahmen verschiedener Projekte',
 					'Überarbeitung der kompletten serverseitigen Infrastruktur via Docker',
