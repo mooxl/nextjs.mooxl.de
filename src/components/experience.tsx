@@ -29,7 +29,7 @@ const Experience = () => (
 				date="seit April 2022, Köln"
 				list={[
 					'Implementierung diverser Features in unterschiedlichen Codebasen',
-					'Beheben von Bugs an abwechslungsreiche Dienste',
+					'Beheben von Bugs an abwechslungsreichen Diensten',
 				]}
 			/>
 			<Milestone
