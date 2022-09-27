@@ -14,7 +14,17 @@ const Skills = () => (
 		<div className="space-y-3">
 			<Section
 				title="Programmiersprachen"
-				skills={['JavaScript', 'TypeScript', 'Golang', 'C++', 'Python']}
+				skills={[
+					'JavaScript',
+					'TypeScript',
+					'Golang',
+					'C++',
+					'Python',
+					'Java',
+					'C',
+					'Assembler',
+					'Prolog',
+				]}
 			/>
 			<Section
 				title="Bibliotheken und Frameworks"
@@ -26,22 +36,30 @@ const Skills = () => (
 					'Three.js',
 					'Node',
 					'Fastify',
+					'Nest.js',
 					'Deno',
 					'Oak',
+					'Fresh',
+					'Astro',
+					'Framer Motion',
 					'Tailwind CSS',
 				]}
 			/>
 			<Section
 				title="Weitere Kenntnisse"
 				skills={[
-					'Linux Server',
+					'Linux',
 					'Docker',
+					'Kubernetes',
 					'Directus',
+					'Strapi',
 					'Traefik',
 					'Git',
 					'HTML',
 					'SCSS',
 					'Deutsch',
+					'Postgres',
+					'MongoDB',
 					'Englisch (fließend)',
 				]}
 			/>
