@@ -16,7 +16,7 @@ const Project = (props: {
 			<div className="bg-gray rounded-lg p-2 text-center h-full">
 				<h4>{props.domain}</h4>
 				<p>{props.technologies}</p>
-				{props.matteo && (
+				{/* {props.matteo && (
 					<a
 						className="hover:text-white"
 						href="https://github.com/matteohoeren"
@@ -24,7 +24,7 @@ const Project = (props: {
 						rel="noopener">
 						gemacht mit Matteo
 					</a>
-				)}
+				)} */}
 			</div>
 		</motion.div>
 	</a>
