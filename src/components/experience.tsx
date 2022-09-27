@@ -25,7 +25,7 @@ const Experience = () => (
 		<div className="space-y-3 lg:space-y-2">
 			<Milestone
 				title="Ambient"
-				role="Frontend Developer "
+				role="Full Stack Web Developer - Werksstudent"
 				date="seit April 2022, Köln"
 				list={[
 					'Implementierung diverser Features in unterschiedlichen Codebasen',
@@ -33,7 +33,7 @@ const Experience = () => (
 				]}
 			/>
 			<Milestone
-				title="Mediaatrium GmbH"
+				title="Mediaatrium"
 				role="Full Stack Developer"
 				date="Februar 2021 - März 2022, Laufach"
 				list={[
@@ -43,7 +43,7 @@ const Experience = () => (
 				]}
 			/>
 			<Milestone
-				title="Curly UG"
+				title="Curly | Becurly"
 				role="Mitgründer"
 				date="Dezember 2019 - Februar 2021, Aachen"
 				list={[
@@ -53,7 +53,7 @@ const Experience = () => (
 			/>
 			<Milestone
 				title="AStA FH Aachen"
-				role="Front- und Backend Web Developer"
+				role="Front- und Backend Web Developer - Werksstudent"
 				date="seit November 2018, Aachen"
 				list={[
 					'Entwicklung und Instandhaltung verschiedener Systeme in Node.js, Deno, Golang und Python',
